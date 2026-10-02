@@ -1,0 +1,129 @@
+{
+  "model_version": "v1.0",
+  "model_name": "Linear Regression",
+  "training_date": "2026-10-02T07:47:59.637568+00:00",
+  "dataset_name": "salary_data.csv",
+  "target_column": "Salary",
+  "feature_list": [
+    "Education",
+    "Experience",
+    "Location",
+    "Job_Title",
+    "Age",
+    "Gender"
+  ],
+  "train_records": 199,
+  "test_records": 50,
+  "n_features_encoded": 15,
+  "metrics": {
+    "mae": 7547.887052260896,
+    "mse": 85562264.25123046,
+    "rmse": 9249.987256814491,
+    "r2": 0.9161346187636633,
+    "adjusted_r2": 0.8791351858652795,
+    "mape": 7.80572969312052,
+    "cv_mean": 0.8900011977353632,
+    "cv_std": 0.013564347796795833
+  },
+  "comparison": [
+    {
+      "name": "Linear Regression",
+      "mae": 7547.887052260896,
+      "mse": 85562264.25123046,
+      "rmse": 9249.987256814491,
+      "r2": 0.9161346187636633,
+      "adjusted_r2": 0.8791351858652795,
+      "mape": 7.80572969312052
+    },
+    {
+      "name": "Ridge Regression",
+      "mae": 7518.817131195604,
+      "mse": 85703382.32852794,
+      "rmse": 9257.612128866058,
+      "r2": 0.9159962993601802,
+      "adjusted_r2": 0.8789358431955538,
+      "mape": 7.7857351829534664
+    },
+    {
+      "name": "Random Forest",
+      "mae": 8309.900189493967,
+      "mse": 108238064.32053904,
+      "rmse": 10403.752415380666,
+      "r2": 0.8939085283920055,
+      "adjusted_r2": 0.8471034673884785,
+      "mape": 8.800255665198653
+    },
+    {
+      "name": "Gradient Boosting",
+      "mae": 7835.268149353098,
+      "mse": 102286842.41310625,
+      "rmse": 10113.695784089328,
+      "r2": 0.8997417248186851,
+      "adjusted_r2": 0.8555101328269286,
+      "mape": 8.370981924743692
+    },
+    {
+      "name": "Extra Trees",
+      "mae": 8511.01617478197,
+      "mse": 108839294.9213372,
+      "rmse": 10432.607292586892,
+      "r2": 0.8933192214821412,
+      "adjusted_r2": 0.8462541721360269,
+      "mape": 8.746275703358537
+    },
+    {
+      "name": "XGBoost",
+      "mae": 8421.251612074999,
+      "mse": 115093735.70811905,
+      "rmse": 10728.174854471708,
+      "r2": 0.8871888196561282,
+      "adjusted_r2": 0.8374191812691258,
+      "mape": 8.998177266153847
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "Education",
+      "importance": 0.579317
+    },
+    {
+      "feature": "Job",
+      "importance": 0.287771
+    },
+    {
+      "feature": "Location",
+      "importance": 0.070179
+    },
+    {
+      "feature": "Experience",
+      "importance": 0.059274
+    },
+    {
+      "feature": "Gender",
+      "importance": 0.003287
+    },
+    {
+      "feature": "Age",
+      "importance": 0.000172
+    }
+  ],
+  "deployment_status": "local",
+  "deployment_id": "",
+  "all_feature_names": [
+    "Experience",
+    "Age",
+    "Education_Bachelor",
+    "Education_High School",
+    "Education_Master",
+    "Education_PhD",
+    "Location_Rural",
+    "Location_Suburban",
+    "Location_Urban",
+    "Job_Title_Analyst",
+    "Job_Title_Director",
+    "Job_Title_Engineer",
+    "Job_Title_Manager",
+    "Gender_Female",
+    "Gender_Male"
+  ]
+}
